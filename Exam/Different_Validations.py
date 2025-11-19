@@ -23,12 +23,12 @@ while True:
         list2.append(user_inp2)
 
 class UserInputValidator:
-    def __init__(self, list):
-        self._list = list
+    def __init__(self, values):
+        self._list = values
         self.positive = []
 
     def validate_positive_integers(self):
-        for n in list:
+        for n in self._list:
             if int(n) %2 == 0:
                 self.positive.append(n)
         return self.positive
@@ -41,6 +41,8 @@ class UserInputValidator:
 result = UserInputValidator(list).validate_positive_integers()
 message = UserInputValidator(list).message(result)
 result2 = UserInputValidator(list2).validate_positive_integers()
-message2 = UserInputValidator(list2).message(result)
+message2 = UserInputValidator(list2).message(result2)
 print(message)
+print(result)
 print(message2)
+print(result2)
