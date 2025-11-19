@@ -1,0 +1,3 @@
+The validator takes a list of integers from input and returns the even integers into a seperate list. If there is text in your input this will
+not be added to the list. If there are no even integers in the list the validator will return an error.
+Simply input the numbers you want to the list, and write exit once done with your inputs.

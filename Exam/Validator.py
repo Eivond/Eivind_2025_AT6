@@ -20,6 +20,12 @@ class UserInputValidator:
             if int(n) %2 == 0:
                 self.positive.append(n)
         return self.positive
-
+    
+    def message(self, result):
+        if result:
+            return "Validated"
+        else:
+            raise ValueError("Invalid")
 result = UserInputValidator(list).validate_positive_integers()
-print(result)
+message = UserInputValidator(list).message(result)
+print(message)
